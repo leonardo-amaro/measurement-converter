@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício #008</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Conversor de medidas</h1>
+    </header>
+
+    <main id="container">
+        <div id="application">
+            <div class="content interactive-area">
+                <label class="sr-only" for="numIn">Digite um número</label>
+                <input type="number" name="numIn" id="numIn" onkeyup="converter()">
+
+                <label class="sr-only" for="measureTypeOut">Unidade de medida padronizada</label>
+                <input type="text" name="measureTypeOut" id="measureTypeOut" value="Metro" readonly>
+            </div>
+            <div class="content non-interactive-area">
+                <p>=</p>
+            </div>
+            <div class="content interactive-area">
+                <label class="sr-only" for="numOut">Número convertido</label>
+                <input type="number" name="numOut" id="numOut" readonly>
+
+                <label class="sr-only" for="measureTypeIn">Selecione uma unidade de medida</label>
+                <select name="measureTypeIn" id="measureTypeIn" onchange="converter()">
+                    <option value="mm">Milímetro</option>
+                    <option value="cm" selected>Centímetro</option>
+                    <option value="dm">Decímetro</option>
+                    <option value="km">Quilômetro</option>
+                    <option value="hm">Hectômetro</option>
+                    <option value="dam">Decâmetro</option>
+                </select>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>2021 - Leonardo Amaro</p>
+    </footer>
+</body>
+
+</html>

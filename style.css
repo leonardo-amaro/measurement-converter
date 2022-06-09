@@ -1,0 +1,111 @@
+/* Global --------- */
+:root {
+    --black: #000000ff;
+    --oxford-blue: #14213dff;
+    --orange-web: #fca311ff;
+    --platinum: #e5e5e5ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--platinum);
+    font-family: 'Rubik', sans-serif;
+}
+
+/* Title --------- */
+header {
+    background-color: var(--oxford-blue);
+
+    padding: 2rem 0 6rem;
+    text-align: center;
+}
+
+h1 {
+    color: var(--orange-web);
+    font-weight: 400;
+}
+
+/* Content container ------ */
+#container {
+    background-color: white;
+    color: var(--black);
+
+    box-sizing: border-box;
+    width: min(90vw, 800px);
+
+    margin: auto;
+    margin-top: -2rem;
+    padding: 2rem;
+    border-radius: 0.4rem;
+}
+
+#application {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+}
+
+.content {
+    padding: 0.25rem;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+
+    overflow: hidden;
+}
+
+.interactive-area {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.non-interactive-area {
+    font-size: 195%;
+
+    text-align: center;
+    line-height: 3rem;
+}
+
+/* Inputs & Selects */
+input {
+    background-color: var(--platinum);
+    color: var(--black);
+
+    font-family: 'Rubik', sans-serif;
+    font-size: 125%;
+    text-align: center;
+
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.5rem 0.25rem;
+    outline-color: var(--oxford-blue);
+}
+
+select, input#measureTypeOut {
+    background-color: var(--oxford-blue);
+    color: var(--orange-web);
+
+    font-family: 'Rubik', sans-serif;
+    font-size: 100%;
+
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.5rem 0.25rem;
+    outline-color: var(--orange-web);
+}
+
+/* Footer --------- */
+footer {
+    color: var(--black);
+    font-weight: 300;
+
+    padding: 6rem 0 2rem;
+    text-align: center;
+    opacity: 0.7;
+}
